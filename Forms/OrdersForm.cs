@@ -1,0 +1,59 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using POS_Program.Classes;
+using POS_Program.DatabaseTransactions;
+
+namespace POS_Program.Forms
+{
+    public partial class OrdersForm : Form
+    {
+        public OrdersForm()
+        {
+            InitializeComponent();
+            LoadOrders();
+        }
+
+        public void LoadOrders()
+        {
+            OrderDataGridView.DataSource = OrderTransactions.GetAllOrders();
+            OrderDataGridView.Columns["CustomerID"].Visible = false;
+        }
+
+        private void NewOrderButton_Click(object sender, EventArgs e)
+        {
+            NewOrderForm newOrder = new NewOrderForm();
+            newOrder.FormClosed += NewOrderForm_Closed;
+            newOrder.Show();
+        }
+
+        public void NewOrderForm_Closed(object sender, FormClosedEventArgs e)
+        {
+            LoadOrders();
+        }
+
+        private void OrderDataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            OrderDataGridView.Columns["ID"].Width = 50;
+            OrderDataGridView.Columns["Date"].Width = 150;
+        }
+
+        private void ViewOrderButton_Click(object sender, EventArgs e)
+        {
+            if(OrderDataGridView.SelectedRows.Count > 0)
+            {
+                var order = OrderDataGridView.CurrentRow.DataBoundItem as Order;
+                OrderView orderView = new OrderView(order);
+                orderView.Show();
+            }
+            
+
+        }
+    }
+}
