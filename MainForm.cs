@@ -15,11 +15,9 @@ namespace POS_Program
 {
     public partial class MainForm : Form
     {
-        public MainForm()
+        public MainForm(Employee employee)
         {
             InitializeComponent();
-            DatabaseConnection conn = new DatabaseConnection();
-            conn.CheckTables();
 
         }
 

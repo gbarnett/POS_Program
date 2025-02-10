@@ -57,6 +57,7 @@ namespace POS_Program.Forms
             {
                 var employee = EmployeeDataGridView.CurrentRow.DataBoundItem as Employee;
                 AddEmployee editEmployee = new AddEmployee(employee);
+                editEmployee.FormClosed += AddEmployee_FormClosed;
                 editEmployee.Show();
             }
             else

@@ -5,13 +5,15 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using POS_Program.Classes;
 
 namespace POS_Program.DatabaseTransactions
 {
     internal class DatabaseConnection
     {
-        public string connectionString = "Server=10.0.0.4;Uid=admin;Pwd=Badboy6376!!;Port=3306;";
-        public const string schemaConnection = "Server=10.0.0.4;Database=pos_program;Uid=admin;Pwd=Badboy6376!!;Port=3306;";
+        // real host : 10.0.0.4
+        public string connectionString = "Server=localhost;Uid=admin;Pwd=Badboy6376!!;Port=3306;";
+        public const string schemaConnection = "Server=localhost;Database=pos_program;Uid=admin;Pwd=Badboy6376!!;Port=3306;";
 
         public MySqlConnection ConnectToDatabase()
         {
@@ -162,7 +164,9 @@ namespace POS_Program.DatabaseTransactions
                 "                         State varchar(255)," +
                 "                         Zip varchar(255)," +
                 "                         Position varchar(255)," +
-                "                         Salary Decimal(10,2));";
+                "                         Salary Decimal(10,2)," +
+                "                         Username varchar(255), " +
+                "                         Password varchar(255));";
             try
             {
                 using (MySqlCommand command = new MySqlCommand(createEmployeeTable, conn))
@@ -235,6 +239,88 @@ namespace POS_Program.DatabaseTransactions
                 Console.WriteLine(ex.Message);
                 conn.Close();
                 return false;
+            }
+        }
+
+        public static void CheckAdminAccount()
+        {
+            int adminAccount = 0;
+            var conn = ConnectToSchema();
+            conn.Open();
+            string commandText = "SELECT EXISTS (SELECT Username FROM EMPLOYEE WHERE Username = 'admin')";
+            try
+            {
+                using (MySqlCommand command = new MySqlCommand(commandText, conn))
+                {
+                    adminAccount = Convert.ToInt32(command.ExecuteScalar());
+                }
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                conn.Close();
+            }
+            if (adminAccount == 0)
+            {
+                string adminCommandText = "INSERT INTO Employee (Username, Password) " +
+                                     "VALUES ('admin', 'password')";
+                conn.Open();
+                
+                try
+                {
+                    using (MySqlCommand command = new MySqlCommand(adminCommandText, conn))
+                    {
+                        command.ExecuteNonQuery();
+                    }
+                    conn.Close();
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    conn.Close();
+                }
+            }
+        }
+
+        public static Employee VerifyLogin(string username, string password)
+        {
+            var conn = ConnectToSchema();
+            conn.Open();
+            string commandText = "SELECT ID, Name, Username FROM Employee WHERE Username = @username AND Password = @password";
+            Employee employee = new Employee();
+            try
+            {
+                using (MySqlCommand command = new MySqlCommand(commandText, conn))
+                {
+                    command.Parameters.AddWithValue("@username", username);
+                    command.Parameters.AddWithValue("@password", password);
+                    using(MySqlDataReader reader = command.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            employee.ID = Convert.ToInt32(reader["ID"]);
+                            employee.Name = reader["Name"].ToString();
+                            employee.Username = reader["Username"].ToString();
+                        }
+                    }
+                    conn.Close();
+                }
+                if (employee.ID != 0)
+                {
+                    return employee;
+                }
+                else
+                {
+                    MessageBox.Show("Login Failed");
+                    return null;
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                conn.Close();
+                return null;
             }
         }
 

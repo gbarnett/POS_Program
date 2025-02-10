@@ -16,18 +16,21 @@ namespace POS_Program
     {
         private bool EditMode;
         private int CustomerID;
+        private List<String> States = CustomerTransactions.States.ToList();
         public AddCustomer()
         {
             InitializeComponent();
+            StateComboBox.DataSource = States;
         }
         public AddCustomer(Customer customer)
         {
             InitializeComponent();
+            StateComboBox.DataSource = States;
             this.NameTextBox.Text = customer.Name;
             this.PhoneTextBox.Text = customer.Phone;
             this.AddressTextBox.Text = customer.Address;
             this.CityTextBox.Text = customer.City;
-            this.StateTextBox.Text = customer.State;
+            this.StateComboBox.Text = customer.State;
             this.ZipTextBox.Text = customer.Zip;
             EditMode = true;
             CustomerID = customer.ID;
@@ -42,7 +45,7 @@ namespace POS_Program
             customer.Phone = PhoneTextBox.Text;
             customer.Address = AddressTextBox.Text;
             customer.City = CityTextBox.Text;
-            customer.State = StateTextBox.Text;
+            customer.State = StateComboBox.Text;
             customer.Zip = ZipTextBox.Text;
 
             if (!EditMode)

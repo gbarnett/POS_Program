@@ -16,12 +16,12 @@ namespace POS_Program.Forms
     {
         BindingList<Product> Products = new BindingList<Product>();
         decimal TotalPrice;
-        Customer customer;
-        public NewOrderForm()
+        Customer currentCustomer;
+        public NewOrderForm(Customer customer)
         {
             InitializeComponent();
-            LoadCustomers();
             LoadProducts();
+            this.currentCustomer = customer;
         }
 
         public void LoadProducts()
@@ -29,20 +29,6 @@ namespace POS_Program.Forms
             ProductsDataGridView.DataSource = ProductTransactions.GetAllProducts();
             ProductsDataGridView.Columns["ID"].Visible = false;
             //ProductsDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-        }
-
-        public void LoadCustomers()
-        {
-            var customers = CustomerTransactions.GetAllCustomers();
-            CustomerDataGridView.DataSource = customers;
-            if (CustomerDataGridView.Columns.Count > 0)
-            {
-                CustomerDataGridView.Columns["Phone"].Visible = false;
-                CustomerDataGridView.Columns["Address"].Visible = false;
-                CustomerDataGridView.Columns["State"].Visible = false;
-                CustomerDataGridView.Columns["City"].Visible = false;
-                CustomerDataGridView.Columns["Zip"].Visible = false;
-            }
         }
 
         public void ReloadCart()
@@ -60,6 +46,10 @@ namespace POS_Program.Forms
                 Products.Add(product);
                 TotalPrice += product.Price;
                 ReloadCart();
+            }
+            else
+            {
+                MessageBox.Show("No product selected");
             }
         }
 
@@ -80,56 +70,24 @@ namespace POS_Program.Forms
 
         private void CheckOutButton_Click(object sender, EventArgs e)
         {
-            if (customer != null)
+
+            Order order = new Order();
+            order.Date = DateTime.Now;
+            order.CustomerID = currentCustomer.ID;
+            order.Name = currentCustomer.Name;
+            order.Total = TotalPrice;
+            OrderTransactions.CreateNewOrder(order);
+
+            int orderID = OrderTransactions.GetLatestOrderID();
+
+            foreach (var item in Products)
             {
-                Order order = new Order();
-                order.Date = DateTime.Now;
-                order.CustomerID = customer.ID;
-                order.Name = customer.Name;
-                order.Total = TotalPrice;
-                OrderTransactions.CreateNewOrder(order);
-
-                int orderID = OrderTransactions.GetLatestOrderID();
-
-                foreach (var item in Products)
-                {
-                    OrderTransactions.AddOrderItem(item, orderID);
-                }
-                MessageBox.Show("Checkout complete");
-                this.Close();
+                OrderTransactions.AddOrderItem(item, orderID);
             }
-            else
-            {
-                MessageBox.Show("No Customer selected");
-            }
-        }
-
-        private void CustomerSelectButton_Click(object sender, EventArgs e)
-        {
-            if (CustomerDataGridView.SelectedRows.Count > 0)
-            {
-                customer = CustomerDataGridView.CurrentRow.DataBoundItem as Customer;
-                CustomerNameLabel.Text = customer.Name;
-                CustomerNameLabel.Visible = true;
-                CustomerDataGridView.DefaultCellStyle.SelectionBackColor = Color.Red;
-            }
-            else
-            {
-                MessageBox.Show("No customer selected");
-            }
-        }
-
-        private void CustomerDataGridView_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
-        {
-            CustomerDataGridView.Columns["ID"].Width = 50;
-        }
-
-        private void CustomerDataGridView_SelectionChanged(object sender, EventArgs e)
-        {
-            customer = null;
-            CustomerDataGridView.DefaultCellStyle.SelectionBackColor = SystemColors.Highlight;
-            CustomerNameLabel.Text = null;
-            CustomerNameLabel.Visible = false;
+            MessageBox.Show("Checkout complete");
+            this.Close();
+            OrdersForm ordersForm = new OrdersForm();
+            ordersForm.Show();
         }
     }
 }

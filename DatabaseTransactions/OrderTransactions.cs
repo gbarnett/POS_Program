@@ -72,7 +72,7 @@ namespace POS_Program.DatabaseTransactions
                         order.Date = (DateTime)reader["Date"];
                         order.CustomerID = Convert.ToInt32(reader["CUSTOMERID"]);
                         order.Name = reader["Name"].ToString();
-                        order.Total = Convert.ToInt32(reader["Total"]);
+                        order.Total = Convert.ToDecimal(reader["Total"]);
                         orders.Add(order);
                     }
                 }

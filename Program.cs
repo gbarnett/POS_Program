@@ -1,3 +1,5 @@
+using POS_Program.Forms;
+
 namespace POS_Program
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace POS_Program
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new MainForm());
+            Application.Run(new LoginForm());
         }
     }
 }

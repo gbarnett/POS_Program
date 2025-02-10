@@ -19,21 +19,25 @@ namespace POS_Program.Forms
         public AddEmployee()
         {
             InitializeComponent();
+            StateComboBox.DataSource = CustomerTransactions.States;
         }
 
         public AddEmployee(Employee employee)
         {
             InitializeComponent();
+            StateComboBox.DataSource = CustomerTransactions.States;
             EditMode = true;
             EmployeeID = employee.ID;
             NameTextBox.Text = employee.Name;
             PhoneTextBox.Text = employee.Phone;
             AddressTextBox.Text = employee.Address;
             CityTextBox.Text = employee.City;
-            StateTextBox.Text = employee.State;
+            StateComboBox.Text = employee.State;
             ZipTextBox.Text = employee.Zip;
             PositionTextBox.Text = employee.Position;
             SalaryTextBox.Text = employee.Salary.ToString();
+            UsernameTextBox.Text = employee.Username;
+            PasswordTextBox.Text = employee.Password;
         }
 
         private void SaveButton_Click(object sender, EventArgs e)
@@ -43,10 +47,13 @@ namespace POS_Program.Forms
             employee.Phone = PhoneTextBox.Text;
             employee.Address = AddressTextBox.Text;
             employee.City = CityTextBox.Text;
-            employee.State = StateTextBox.Text;
+            employee.State = StateComboBox.Text;
             employee.Zip = ZipTextBox.Text;
             employee.Position = PositionTextBox.Text;
             employee.Salary = Convert.ToDecimal(SalaryTextBox.Text);
+            employee.Username = UsernameTextBox.Text;
+            employee.Password = PasswordTextBox.Text;
+
 
             if (!EditMode)
             {
@@ -54,6 +61,7 @@ namespace POS_Program.Forms
             }
             else
             {
+                employee.ID = EmployeeID;
                 EmployeeTransactions.EditEmployee(employee);
             }
             this.Close();

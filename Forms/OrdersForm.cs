@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Org.BouncyCastle.Math.EC;
 using POS_Program.Classes;
 using POS_Program.DatabaseTransactions;
 
@@ -28,9 +29,9 @@ namespace POS_Program.Forms
 
         private void NewOrderButton_Click(object sender, EventArgs e)
         {
-            NewOrderForm newOrder = new NewOrderForm();
-            newOrder.FormClosed += NewOrderForm_Closed;
-            newOrder.Show();
+            CustomerSelectForm customerSelect = new CustomerSelectForm();
+            this.Close();
+            customerSelect.Show();
         }
 
         public void NewOrderForm_Closed(object sender, FormClosedEventArgs e)
@@ -42,6 +43,7 @@ namespace POS_Program.Forms
         {
             OrderDataGridView.Columns["ID"].Width = 50;
             OrderDataGridView.Columns["Date"].Width = 150;
+            //OrderDataGridView.Columns["Total"].DefaultCellStyle.Format = "F2";
         }
 
         private void ViewOrderButton_Click(object sender, EventArgs e)
@@ -52,8 +54,6 @@ namespace POS_Program.Forms
                 OrderView orderView = new OrderView(order);
                 orderView.Show();
             }
-            
-
         }
     }
 }

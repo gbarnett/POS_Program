@@ -14,7 +14,7 @@ namespace POS_Program.DatabaseTransactions
         public static BindingList<Employee> GetAllEmployees()
         {
             BindingList<Employee> employees = new BindingList<Employee>();
-            string commandText = "SELECT * FROM Employee";
+            string commandText = "SELECT * FROM Employee WHERE ID > 1";
 
             var conn = DatabaseConnection.ConnectToSchema();
             conn.Open();
@@ -35,6 +35,8 @@ namespace POS_Program.DatabaseTransactions
                         employee.Zip = reader["Zip"].ToString();
                         employee.Position = reader["Position"].ToString();
                         employee.Salary = Convert.ToDecimal(reader["Salary"]);
+                        employee.Username = reader["Username"].ToString();
+                        employee.Password = reader["Password"].ToString();
 
                         employees.Add(employee);
                     }
@@ -55,8 +57,8 @@ namespace POS_Program.DatabaseTransactions
         {
             var conn = DatabaseConnection.ConnectToSchema();
             conn.Open();
-            string commandText = "INSERT INTO Employee (Name, Phone, Address, City, State, Zip, Position, Salary) " +
-            "VALUES (@Name, @Phone, @Address, @City, @State, @Zip, @Position, @Salary);";
+            string commandText = "INSERT INTO Employee (Name, Phone, Address, City, State, Zip, Position, Salary, Username, Password) " +
+            "VALUES (@Name, @Phone, @Address, @City, @State, @Zip, @Position, @Salary, @Username, @Password);";
             using (MySqlCommand insertEmployee = new MySqlCommand(commandText, conn))
             {
                 try
@@ -69,6 +71,8 @@ namespace POS_Program.DatabaseTransactions
                     insertEmployee.Parameters.AddWithValue("@Zip", employee.Zip);
                     insertEmployee.Parameters.AddWithValue("@Position", employee.Position);
                     insertEmployee.Parameters.AddWithValue("@Salary", employee.Salary);
+                    insertEmployee.Parameters.AddWithValue("@Username", employee.Username);
+                    insertEmployee.Parameters.AddWithValue("@Password", employee.Password);
                     insertEmployee.ExecuteNonQuery();
                     conn.Close();
                     return true;
@@ -118,13 +122,14 @@ namespace POS_Program.DatabaseTransactions
             var conn = DatabaseConnection.ConnectToSchema();
             conn.Open();
             string commandText = "UPDATE Employee " +
-            "SET Name = @Name, Phone = @Phone, Address = @Address, City = @City, State = @State, Zip = @Zip, Position = @Postion, Salary = @Salary " +
+            "SET Name = @Name, Phone = @Phone, Address = @Address, City = @City, State = @State, Zip = @Zip, Position = @Position, Salary = @Salary, Username = @Username, Password = @Password " +
             "WHERE ID = @id;";
 
             try
             {
                 using (MySqlCommand editEmployee = new MySqlCommand(commandText, conn))
                 {
+                    editEmployee.Parameters.AddWithValue("@id", employee.ID);
                     editEmployee.Parameters.AddWithValue("@Name", employee.Name);
                     editEmployee.Parameters.AddWithValue("@Phone", employee.Phone);
                     editEmployee.Parameters.AddWithValue("@Address", employee.Address);
@@ -133,6 +138,8 @@ namespace POS_Program.DatabaseTransactions
                     editEmployee.Parameters.AddWithValue("@Zip", employee.Zip);
                     editEmployee.Parameters.AddWithValue("@Position", employee.Position);
                     editEmployee.Parameters.AddWithValue("@Salary", employee.Salary);
+                    editEmployee.Parameters.AddWithValue("@Username", employee.Username);
+                    editEmployee.Parameters.AddWithValue("@Password", employee.Password);
 
                     editEmployee.ExecuteNonQuery();
                     conn.Close();
