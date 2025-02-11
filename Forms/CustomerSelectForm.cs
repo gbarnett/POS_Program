@@ -8,16 +8,19 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 using System.Windows.Forms;
 
 namespace POS_Program.Forms
 {
     public partial class CustomerSelectForm : Form
     {
-        public CustomerSelectForm()
+        Employee CurrentEmployee;
+        public CustomerSelectForm(Employee employee)
         {
             InitializeComponent();
             LoadCustomers();
+            this.CurrentEmployee = employee;
         }
 
         private void LoadCustomers()
@@ -31,7 +34,7 @@ namespace POS_Program.Forms
             {
                 var customer = CustomerDataGridView.CurrentRow.DataBoundItem as Customer;
                 this.Close();
-                NewOrderForm newOrder = new NewOrderForm(customer);
+                NewOrderForm newOrder = new NewOrderForm(customer, CurrentEmployee);
                 newOrder.Show();
             }
         }

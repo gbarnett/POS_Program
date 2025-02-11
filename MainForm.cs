@@ -15,9 +15,11 @@ namespace POS_Program
 {
     public partial class MainForm : Form
     {
+        Employee CurrentEmployee;
         public MainForm(Employee employee)
         {
             InitializeComponent();
+            this.CurrentEmployee = employee;
 
         }
 
@@ -29,19 +31,19 @@ namespace POS_Program
 
         private void ProductsButton_Click(object sender, EventArgs e)
         {
-            ProductsForm productsForm = new ProductsForm();
+            ProductsForm productsForm = new ProductsForm(CurrentEmployee);
             productsForm.Show();
         }
 
         private void EmployeeButton_Click(object sender, EventArgs e)
         {
-            EmployeesForm employeesForm = new EmployeesForm();
+            EmployeesForm employeesForm = new EmployeesForm(CurrentEmployee);
             employeesForm.Show();
         }
 
         private void OrdersButton_Click(object sender, EventArgs e)
         {
-            OrdersForm ordersForm = new OrdersForm();
+            OrdersForm ordersForm = new OrdersForm(CurrentEmployee);
             ordersForm.Show();
         }
     }

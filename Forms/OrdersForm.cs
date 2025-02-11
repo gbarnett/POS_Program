@@ -15,10 +15,17 @@ namespace POS_Program.Forms
 {
     public partial class OrdersForm : Form
     {
-        public OrdersForm()
+        Employee currentEmployee;
+        public OrdersForm(Employee employee)
         {
             InitializeComponent();
             LoadOrders();
+            this.currentEmployee = employee;
+
+            if (employee.isAdmin != 1)
+            {
+                DeleteOrderButton.Enabled = false;
+            }
         }
 
         public void LoadOrders()
@@ -29,7 +36,7 @@ namespace POS_Program.Forms
 
         private void NewOrderButton_Click(object sender, EventArgs e)
         {
-            CustomerSelectForm customerSelect = new CustomerSelectForm();
+            CustomerSelectForm customerSelect = new CustomerSelectForm(currentEmployee);
             this.Close();
             customerSelect.Show();
         }
@@ -48,11 +55,21 @@ namespace POS_Program.Forms
 
         private void ViewOrderButton_Click(object sender, EventArgs e)
         {
-            if(OrderDataGridView.SelectedRows.Count > 0)
+            if (OrderDataGridView.SelectedRows.Count > 0)
             {
                 var order = OrderDataGridView.CurrentRow.DataBoundItem as Order;
                 OrderView orderView = new OrderView(order);
                 orderView.Show();
+            }
+        }
+
+        private void DeleteOrderButton_Click(object sender, EventArgs e)
+        {
+            if (OrderDataGridView.SelectedRows.Count > 0)
+            {
+                var order = OrderDataGridView.CurrentRow.DataBoundItem as Order;
+                OrderTransactions.DeleteOrder(order);
+                LoadOrders();
             }
         }
     }

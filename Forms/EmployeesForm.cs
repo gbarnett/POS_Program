@@ -14,9 +14,17 @@ namespace POS_Program.Forms
 {
     public partial class EmployeesForm : Form
     {
-        public EmployeesForm()
+        private Employee CurrentEmployee;
+        public EmployeesForm(Employee employee)
         {
             InitializeComponent();
+            this.CurrentEmployee = employee;
+            if (employee.isAdmin != 1)
+            {
+                EditEmployeeButton.Enabled = false;
+                DeleteEmployeeButton.Enabled = false;
+                AddEmployeeButton.Enabled = false;
+            }
             LoadEmployees();
         }
 

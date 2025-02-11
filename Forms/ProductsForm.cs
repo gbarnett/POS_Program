@@ -14,10 +14,18 @@ namespace POS_Program.Forms
 {
     public partial class ProductsForm : Form
     {
-        public ProductsForm()
+        Employee CurrentEmployee;
+        public ProductsForm(Employee employee)
         {
             InitializeComponent();
             LoadProducts();
+            this.CurrentEmployee = employee;
+            if(employee.isAdmin != 1)
+            {
+                AddProductButton.Enabled = false;
+                EditButton.Enabled = false;
+                DeleteProductButton.Enabled = false;
+            }
         }
 
         public void LoadProducts()

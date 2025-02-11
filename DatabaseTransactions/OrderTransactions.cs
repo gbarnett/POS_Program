@@ -112,6 +112,29 @@ namespace POS_Program.DatabaseTransactions
             }
         }
 
+        public static bool DeleteOrder(Order order)
+        {
+            var conn = DatabaseConnection.ConnectToSchema();
+            string commandText = "DELETE FROM `ORDER` WHERE ID = @id";
+            conn.Open();
+            try
+            {
+                using (MySqlCommand deleteOrder = new MySqlCommand(commandText, conn))
+                {
+                    deleteOrder.Parameters.AddWithValue("@id", order.ID);
+                    deleteOrder.ExecuteNonQuery();
+                }
+                conn.Close();
+                return true;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                conn.Close();
+                return false;
+            }
+        }
+
         public static List<Product> GetOrderItems(Order order)
         {
             List<Product> products = new List<Product>();

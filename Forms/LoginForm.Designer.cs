@@ -38,18 +38,20 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label1.Location = new Point(24, 72);
             label1.Name = "label1";
-            label1.Size = new Size(82, 20);
+            label1.Size = new Size(88, 20);
             label1.TabIndex = 0;
             label1.Text = "Username :";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label2.Location = new Point(32, 128);
             label2.Name = "label2";
-            label2.Size = new Size(77, 20);
+            label2.Size = new Size(84, 20);
             label2.TabIndex = 1;
             label2.Text = "Password :";
             // 
@@ -70,6 +72,7 @@
             // 
             // LoginButton
             // 
+            LoginButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             LoginButton.Location = new Point(112, 184);
             LoginButton.Margin = new Padding(3, 4, 3, 4);
             LoginButton.Name = "LoginButton";

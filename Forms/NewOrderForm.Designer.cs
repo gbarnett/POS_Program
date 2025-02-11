@@ -79,6 +79,7 @@
             // 
             // AddProductButton
             // 
+            AddProductButton.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold);
             AddProductButton.Location = new Point(392, 148);
             AddProductButton.Margin = new Padding(3, 4, 3, 4);
             AddProductButton.Name = "AddProductButton";
@@ -90,6 +91,7 @@
             // 
             // RemoveProductButton
             // 
+            RemoveProductButton.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold);
             RemoveProductButton.Location = new Point(392, 383);
             RemoveProductButton.Margin = new Padding(3, 4, 3, 4);
             RemoveProductButton.Name = "RemoveProductButton";
@@ -101,6 +103,7 @@
             // 
             // CheckOutButton
             // 
+            CheckOutButton.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold);
             CheckOutButton.Location = new Point(771, 528);
             CheckOutButton.Margin = new Padding(3, 4, 3, 4);
             CheckOutButton.Name = "CheckOutButton";
@@ -113,40 +116,40 @@
             // TotalLabel
             // 
             TotalLabel.AutoSize = true;
-            TotalLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            TotalLabel.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold);
             TotalLabel.Location = new Point(421, 560);
             TotalLabel.Name = "TotalLabel";
-            TotalLabel.Size = new Size(90, 28);
+            TotalLabel.Size = new Size(71, 16);
             TotalLabel.TabIndex = 7;
             TotalLabel.Text = "Total : $0";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold);
             label1.Location = new Point(160, 13);
             label1.Name = "label1";
-            label1.Size = new Size(89, 28);
+            label1.Size = new Size(68, 16);
             label1.TabIndex = 8;
             label1.Text = "Products";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold);
             label2.Location = new Point(695, 13);
             label2.Name = "label2";
-            label2.Size = new Size(48, 28);
+            label2.Size = new Size(35, 16);
             label2.TabIndex = 9;
             label2.Text = "Cart";
             // 
             // CustomerNameLabel
             // 
             CustomerNameLabel.AutoSize = true;
-            CustomerNameLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CustomerNameLabel.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold);
             CustomerNameLabel.Location = new Point(160, 560);
             CustomerNameLabel.Name = "CustomerNameLabel";
-            CustomerNameLabel.Size = new Size(96, 28);
+            CustomerNameLabel.Size = new Size(72, 16);
             CustomerNameLabel.TabIndex = 13;
             CustomerNameLabel.Text = "Customer";
             CustomerNameLabel.Visible = false;

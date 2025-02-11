@@ -41,22 +41,25 @@
             EmployeeDataGridView.AllowUserToDeleteRows = false;
             EmployeeDataGridView.BorderStyle = BorderStyle.Fixed3D;
             EmployeeDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            EmployeeDataGridView.Location = new Point(135, 12);
+            EmployeeDataGridView.Location = new Point(154, 16);
+            EmployeeDataGridView.Margin = new Padding(3, 4, 3, 4);
             EmployeeDataGridView.MultiSelect = false;
             EmployeeDataGridView.Name = "EmployeeDataGridView";
             EmployeeDataGridView.ReadOnly = true;
             EmployeeDataGridView.RowHeadersVisible = false;
             EmployeeDataGridView.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             EmployeeDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            EmployeeDataGridView.Size = new Size(653, 394);
+            EmployeeDataGridView.Size = new Size(746, 525);
             EmployeeDataGridView.TabIndex = 1;
             EmployeeDataGridView.DataBindingComplete += EmployeeDataGridView_DataBindingComplete;
             // 
             // EditEmployeeButton
             // 
-            EditEmployeeButton.Location = new Point(12, 168);
+            EditEmployeeButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            EditEmployeeButton.Location = new Point(14, 224);
+            EditEmployeeButton.Margin = new Padding(3, 4, 3, 4);
             EditEmployeeButton.Name = "EditEmployeeButton";
-            EditEmployeeButton.Size = new Size(117, 50);
+            EditEmployeeButton.Size = new Size(134, 67);
             EditEmployeeButton.TabIndex = 7;
             EditEmployeeButton.Text = "Edit";
             EditEmployeeButton.UseVisualStyleBackColor = true;
@@ -64,9 +67,11 @@
             // 
             // DeleteEmployeeButton
             // 
-            DeleteEmployeeButton.Location = new Point(12, 356);
+            DeleteEmployeeButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            DeleteEmployeeButton.Location = new Point(14, 475);
+            DeleteEmployeeButton.Margin = new Padding(3, 4, 3, 4);
             DeleteEmployeeButton.Name = "DeleteEmployeeButton";
-            DeleteEmployeeButton.Size = new Size(117, 50);
+            DeleteEmployeeButton.Size = new Size(134, 67);
             DeleteEmployeeButton.TabIndex = 6;
             DeleteEmployeeButton.Text = "Delete";
             DeleteEmployeeButton.UseVisualStyleBackColor = true;
@@ -74,9 +79,11 @@
             // 
             // AddEmployeeButton
             // 
-            AddEmployeeButton.Location = new Point(12, 12);
+            AddEmployeeButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            AddEmployeeButton.Location = new Point(14, 16);
+            AddEmployeeButton.Margin = new Padding(3, 4, 3, 4);
             AddEmployeeButton.Name = "AddEmployeeButton";
-            AddEmployeeButton.Size = new Size(117, 50);
+            AddEmployeeButton.Size = new Size(134, 67);
             AddEmployeeButton.TabIndex = 5;
             AddEmployeeButton.Text = "Add";
             AddEmployeeButton.UseVisualStyleBackColor = true;
@@ -84,14 +91,15 @@
             // 
             // EmployeesForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 128, 0);
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(EditEmployeeButton);
             Controls.Add(DeleteEmployeeButton);
             Controls.Add(AddEmployeeButton);
             Controls.Add(EmployeeDataGridView);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "EmployeesForm";
             Text = "EmployeesForm";
             ((System.ComponentModel.ISupportInitialize)EmployeeDataGridView).EndInit();

@@ -50,6 +50,7 @@
             PasswordTextBox = new TextBox();
             UsernameTextBox = new TextBox();
             StateComboBox = new ComboBox();
+            IsAdminCheckBox = new CheckBox();
             SuspendLayout();
             // 
             // ZipTextBox
@@ -63,18 +64,20 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(62, 304);
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label6.Location = new Point(88, 312);
             label6.Name = "label6";
-            label6.Size = new Size(38, 20);
+            label6.Size = new Size(39, 20);
             label6.TabIndex = 26;
             label6.Text = "Zip :";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(62, 256);
+            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label5.Location = new Point(80, 256);
             label5.Name = "label5";
-            label5.Size = new Size(50, 20);
+            label5.Size = new Size(53, 20);
             label5.TabIndex = 24;
             label5.Text = "State :";
             // 
@@ -89,9 +92,10 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(64, 200);
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label4.Location = new Point(88, 200);
             label4.Name = "label4";
-            label4.Size = new Size(41, 20);
+            label4.Size = new Size(44, 20);
             label4.TabIndex = 22;
             label4.Text = "City :";
             // 
@@ -106,9 +110,10 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label3.Location = new Point(62, 144);
             label3.Name = "label3";
-            label3.Size = new Size(69, 20);
+            label3.Size = new Size(74, 20);
             label3.TabIndex = 20;
             label3.Text = "Address :";
             // 
@@ -123,14 +128,16 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(62, 92);
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label2.Location = new Point(72, 92);
             label2.Name = "label2";
-            label2.Size = new Size(57, 20);
+            label2.Size = new Size(61, 20);
             label2.TabIndex = 18;
             label2.Text = "Phone :";
             // 
             // CancelButton
             // 
+            CancelButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             CancelButton.Location = new Point(274, 592);
             CancelButton.Margin = new Padding(3, 4, 3, 4);
             CancelButton.Name = "CancelButton";
@@ -142,6 +149,7 @@
             // 
             // SaveButton
             // 
+            SaveButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SaveButton.Location = new Point(14, 592);
             SaveButton.Margin = new Padding(3, 4, 3, 4);
             SaveButton.Name = "SaveButton";
@@ -162,9 +170,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(62, 27);
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label1.Location = new Point(72, 27);
             label1.Name = "label1";
-            label1.Size = new Size(60, 20);
+            label1.Size = new Size(63, 20);
             label1.TabIndex = 14;
             label1.Text = "Name : ";
             // 
@@ -187,36 +196,40 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(62, 368);
+            label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label7.Location = new Point(56, 368);
             label7.Name = "label7";
-            label7.Size = new Size(68, 20);
+            label7.Size = new Size(74, 20);
             label7.TabIndex = 30;
             label7.Text = "Position :";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(62, 424);
+            label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label8.Location = new Point(72, 424);
             label8.Name = "label8";
-            label8.Size = new Size(56, 20);
+            label8.Size = new Size(60, 20);
             label8.TabIndex = 31;
             label8.Text = "Salary :";
             // 
             // label9
             // 
             label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label9.Location = new Point(48, 536);
             label9.Name = "label9";
-            label9.Size = new Size(77, 20);
+            label9.Size = new Size(84, 20);
             label9.TabIndex = 35;
             label9.Text = "Password :";
             // 
             // label10
             // 
             label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label10.Location = new Point(48, 480);
             label10.Name = "label10";
-            label10.Size = new Size(82, 20);
+            label10.Size = new Size(88, 20);
             label10.TabIndex = 34;
             label10.Text = "Username :";
             // 
@@ -225,6 +238,7 @@
             PasswordTextBox.Location = new Point(136, 528);
             PasswordTextBox.Margin = new Padding(3, 4, 3, 4);
             PasswordTextBox.Name = "PasswordTextBox";
+            PasswordTextBox.PasswordChar = '*';
             PasswordTextBox.Size = new Size(114, 27);
             PasswordTextBox.TabIndex = 33;
             // 
@@ -245,11 +259,24 @@
             StateComboBox.Size = new Size(114, 28);
             StateComboBox.TabIndex = 36;
             // 
+            // IsAdminCheckBox
+            // 
+            IsAdminCheckBox.AutoSize = true;
+            IsAdminCheckBox.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            IsAdminCheckBox.Location = new Point(152, 592);
+            IsAdminCheckBox.Name = "IsAdminCheckBox";
+            IsAdminCheckBox.Size = new Size(78, 24);
+            IsAdminCheckBox.TabIndex = 37;
+            IsAdminCheckBox.Text = "Admin";
+            IsAdminCheckBox.UseVisualStyleBackColor = true;
+            // 
             // AddEmployee
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(64, 128, 0);
             ClientSize = new Size(374, 659);
+            Controls.Add(IsAdminCheckBox);
             Controls.Add(StateComboBox);
             Controls.Add(label9);
             Controls.Add(label10);
@@ -303,5 +330,6 @@
         private TextBox PasswordTextBox;
         private TextBox UsernameTextBox;
         private ComboBox StateComboBox;
+        private CheckBox IsAdminCheckBox;
     }
 }

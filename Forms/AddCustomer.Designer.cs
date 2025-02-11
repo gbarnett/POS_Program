@@ -47,9 +47,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(65, 27);
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label1.Location = new Point(72, 27);
             label1.Name = "label1";
-            label1.Size = new Size(60, 20);
+            label1.Size = new Size(63, 20);
             label1.TabIndex = 0;
             label1.Text = "Name : ";
             // 
@@ -63,6 +64,7 @@
             // 
             // SaveButton
             // 
+            SaveButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             SaveButton.Location = new Point(14, 395);
             SaveButton.Margin = new Padding(3, 4, 3, 4);
             SaveButton.Name = "SaveButton";
@@ -74,6 +76,7 @@
             // 
             // CancelButton
             // 
+            CancelButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             CancelButton.Location = new Point(254, 395);
             CancelButton.Margin = new Padding(3, 4, 3, 4);
             CancelButton.Name = "CancelButton";
@@ -85,7 +88,7 @@
             // 
             // PhoneTextBox
             // 
-            PhoneTextBox.Location = new Point(137, 81);
+            PhoneTextBox.Location = new Point(137, 72);
             PhoneTextBox.Margin = new Padding(3, 4, 3, 4);
             PhoneTextBox.Name = "PhoneTextBox";
             PhoneTextBox.Size = new Size(114, 27);
@@ -94,15 +97,16 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(65, 92);
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label2.Location = new Point(72, 80);
             label2.Name = "label2";
-            label2.Size = new Size(57, 20);
+            label2.Size = new Size(61, 20);
             label2.TabIndex = 4;
             label2.Text = "Phone :";
             // 
             // AddressTextBox
             // 
-            AddressTextBox.Location = new Point(137, 147);
+            AddressTextBox.Location = new Point(137, 136);
             AddressTextBox.Margin = new Padding(3, 4, 3, 4);
             AddressTextBox.Name = "AddressTextBox";
             AddressTextBox.Size = new Size(114, 27);
@@ -111,15 +115,16 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(65, 157);
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label3.Location = new Point(56, 152);
             label3.Name = "label3";
-            label3.Size = new Size(69, 20);
+            label3.Size = new Size(74, 20);
             label3.TabIndex = 6;
             label3.Text = "Address :";
             // 
             // CityTextBox
             // 
-            CityTextBox.Location = new Point(137, 213);
+            CityTextBox.Location = new Point(137, 208);
             CityTextBox.Margin = new Padding(3, 4, 3, 4);
             CityTextBox.Name = "CityTextBox";
             CityTextBox.Size = new Size(114, 27);
@@ -128,18 +133,20 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(65, 224);
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label4.Location = new Point(88, 216);
             label4.Name = "label4";
-            label4.Size = new Size(41, 20);
+            label4.Size = new Size(44, 20);
             label4.TabIndex = 8;
             label4.Text = "City :";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(65, 289);
+            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label5.Location = new Point(80, 288);
             label5.Name = "label5";
-            label5.Size = new Size(50, 20);
+            label5.Size = new Size(53, 20);
             label5.TabIndex = 10;
             label5.Text = "State :";
             // 
@@ -154,9 +161,10 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(65, 355);
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label6.Location = new Point(96, 352);
             label6.Name = "label6";
-            label6.Size = new Size(38, 20);
+            label6.Size = new Size(39, 20);
             label6.TabIndex = 12;
             label6.Text = "Zip :";
             // 
@@ -173,6 +181,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(64, 128, 0);
             ClientSize = new Size(353, 461);
             Controls.Add(StateComboBox);
             Controls.Add(ZipTextBox);

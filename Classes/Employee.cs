@@ -18,7 +18,19 @@ namespace POS_Program.Classes
         public string Position { get; set; }
         public decimal Salary { get; set; }
         public string Username { get; set; }
-        public string Password { get; set; }
+        private string Password;
+
+        public int isAdmin { get; set; }
+
+
+        public string GetPassword()
+        {
+            return this.Password;
+        }
+        public void SetPassword(string password)
+        {
+            this.Password = password;
+        }
 
         public Employee()
         {

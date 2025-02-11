@@ -36,6 +36,7 @@
             // 
             // CustomerSelectButton
             // 
+            CustomerSelectButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             CustomerSelectButton.Location = new Point(136, 528);
             CustomerSelectButton.Margin = new Padding(3, 4, 3, 4);
             CustomerSelectButton.Name = "CustomerSelectButton";
@@ -48,10 +49,10 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.Location = new Point(152, 8);
             label3.Name = "label3";
-            label3.Size = new Size(96, 28);
+            label3.Size = new Size(102, 28);
             label3.TabIndex = 14;
             label3.Text = "Customer";
             // 
@@ -78,6 +79,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(64, 128, 0);
             ClientSize = new Size(387, 602);
             Controls.Add(CustomerSelectButton);
             Controls.Add(label3);

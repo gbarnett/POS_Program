@@ -37,7 +37,11 @@ namespace POS_Program.Forms
             PositionTextBox.Text = employee.Position;
             SalaryTextBox.Text = employee.Salary.ToString();
             UsernameTextBox.Text = employee.Username;
-            PasswordTextBox.Text = employee.Password;
+            PasswordTextBox.Text = employee.GetPassword();
+            if (employee.isAdmin == 1)
+            {
+                IsAdminCheckBox.Checked = true;
+            }
         }
 
         private void SaveButton_Click(object sender, EventArgs e)
@@ -52,7 +56,15 @@ namespace POS_Program.Forms
             employee.Position = PositionTextBox.Text;
             employee.Salary = Convert.ToDecimal(SalaryTextBox.Text);
             employee.Username = UsernameTextBox.Text;
-            employee.Password = PasswordTextBox.Text;
+            employee.SetPassword(PasswordTextBox.Text);
+            if (IsAdminCheckBox.Checked)
+            {
+                employee.isAdmin = 1;
+            }
+            else
+            {
+                employee.isAdmin = 0;
+            }
 
 
             if (!EditMode)
@@ -62,6 +74,10 @@ namespace POS_Program.Forms
             else
             {
                 employee.ID = EmployeeID;
+                if (PasswordTextBox.Text == null)
+                {
+
+                }
                 EmployeeTransactions.EditEmployee(employee);
             }
             this.Close();

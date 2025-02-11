@@ -166,7 +166,8 @@ namespace POS_Program.DatabaseTransactions
                 "                         Position varchar(255)," +
                 "                         Salary Decimal(10,2)," +
                 "                         Username varchar(255), " +
-                "                         Password varchar(255));";
+                "                         Password varchar(255), " +
+                "                         isAdmin INT NOT NULL);";
             try
             {
                 using (MySqlCommand command = new MySqlCommand(createEmployeeTable, conn))
@@ -287,7 +288,7 @@ namespace POS_Program.DatabaseTransactions
         {
             var conn = ConnectToSchema();
             conn.Open();
-            string commandText = "SELECT ID, Name, Username FROM Employee WHERE Username = @username AND Password = @password";
+            string commandText = "SELECT ID, Name, Username, isAdmin FROM Employee WHERE Username = @username AND Password = @password";
             Employee employee = new Employee();
             try
             {
@@ -302,6 +303,7 @@ namespace POS_Program.DatabaseTransactions
                             employee.ID = Convert.ToInt32(reader["ID"]);
                             employee.Name = reader["Name"].ToString();
                             employee.Username = reader["Username"].ToString();
+                            employee.isAdmin = Convert.ToInt32(reader["isAdmin"]);
                         }
                     }
                     conn.Close();

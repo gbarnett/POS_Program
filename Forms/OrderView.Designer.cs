@@ -56,20 +56,20 @@
             // CustomerNameLabel
             // 
             CustomerNameLabel.AutoSize = true;
-            CustomerNameLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CustomerNameLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             CustomerNameLabel.Location = new Point(203, 12);
             CustomerNameLabel.Name = "CustomerNameLabel";
-            CustomerNameLabel.Size = new Size(96, 28);
+            CustomerNameLabel.Size = new Size(102, 28);
             CustomerNameLabel.TabIndex = 12;
             CustomerNameLabel.Text = "Customer";
             // 
             // PriceLabel
             // 
             PriceLabel.AutoSize = true;
-            PriceLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            PriceLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             PriceLabel.Location = new Point(224, 61);
             PriceLabel.Name = "PriceLabel";
-            PriceLabel.Size = new Size(68, 28);
+            PriceLabel.Size = new Size(76, 28);
             PriceLabel.TabIndex = 13;
             PriceLabel.Text = "Price : ";
             // 

@@ -16,12 +16,14 @@ namespace POS_Program.Forms
     {
         BindingList<Product> Products = new BindingList<Product>();
         decimal TotalPrice;
-        Customer currentCustomer;
-        public NewOrderForm(Customer customer)
+        Customer CurrentCustomer;
+        Employee CurrentEmployee;
+        public NewOrderForm(Customer customer, Employee employee)
         {
             InitializeComponent();
             LoadProducts();
-            this.currentCustomer = customer;
+            this.CurrentCustomer = customer;
+            this.CurrentEmployee = employee;
         }
 
         public void LoadProducts()
@@ -73,8 +75,8 @@ namespace POS_Program.Forms
 
             Order order = new Order();
             order.Date = DateTime.Now;
-            order.CustomerID = currentCustomer.ID;
-            order.Name = currentCustomer.Name;
+            order.CustomerID = CurrentCustomer.ID;
+            order.Name = CurrentCustomer.Name;
             order.Total = TotalPrice;
             OrderTransactions.CreateNewOrder(order);
 
@@ -86,7 +88,7 @@ namespace POS_Program.Forms
             }
             MessageBox.Show("Checkout complete");
             this.Close();
-            OrdersForm ordersForm = new OrdersForm();
+            OrdersForm ordersForm = new OrdersForm(CurrentEmployee);
             ordersForm.Show();
         }
     }

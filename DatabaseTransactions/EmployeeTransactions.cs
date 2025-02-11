@@ -36,7 +36,8 @@ namespace POS_Program.DatabaseTransactions
                         employee.Position = reader["Position"].ToString();
                         employee.Salary = Convert.ToDecimal(reader["Salary"]);
                         employee.Username = reader["Username"].ToString();
-                        employee.Password = reader["Password"].ToString();
+                        employee.SetPassword(reader["Password"].ToString());
+                        employee.isAdmin = Convert.ToInt32(reader["isAdmin"]);
 
                         employees.Add(employee);
                     }
@@ -57,8 +58,8 @@ namespace POS_Program.DatabaseTransactions
         {
             var conn = DatabaseConnection.ConnectToSchema();
             conn.Open();
-            string commandText = "INSERT INTO Employee (Name, Phone, Address, City, State, Zip, Position, Salary, Username, Password) " +
-            "VALUES (@Name, @Phone, @Address, @City, @State, @Zip, @Position, @Salary, @Username, @Password);";
+            string commandText = "INSERT INTO Employee (Name, Phone, Address, City, State, Zip, Position, Salary, Username, Password, isAdmin) " +
+            "VALUES (@Name, @Phone, @Address, @City, @State, @Zip, @Position, @Salary, @Username, @Password, @isAdmin);";
             using (MySqlCommand insertEmployee = new MySqlCommand(commandText, conn))
             {
                 try
@@ -72,7 +73,8 @@ namespace POS_Program.DatabaseTransactions
                     insertEmployee.Parameters.AddWithValue("@Position", employee.Position);
                     insertEmployee.Parameters.AddWithValue("@Salary", employee.Salary);
                     insertEmployee.Parameters.AddWithValue("@Username", employee.Username);
-                    insertEmployee.Parameters.AddWithValue("@Password", employee.Password);
+                    insertEmployee.Parameters.AddWithValue("@Password", employee.GetPassword());
+                    insertEmployee.Parameters.AddWithValue("@isAdmin", employee.isAdmin);
                     insertEmployee.ExecuteNonQuery();
                     conn.Close();
                     return true;
@@ -122,7 +124,7 @@ namespace POS_Program.DatabaseTransactions
             var conn = DatabaseConnection.ConnectToSchema();
             conn.Open();
             string commandText = "UPDATE Employee " +
-            "SET Name = @Name, Phone = @Phone, Address = @Address, City = @City, State = @State, Zip = @Zip, Position = @Position, Salary = @Salary, Username = @Username, Password = @Password " +
+            "SET Name = @Name, Phone = @Phone, Address = @Address, City = @City, State = @State, Zip = @Zip, Position = @Position, Salary = @Salary, Username = @Username, Password = @Password, isAdmin = @isAdmin " +
             "WHERE ID = @id;";
 
             try
@@ -139,7 +141,8 @@ namespace POS_Program.DatabaseTransactions
                     editEmployee.Parameters.AddWithValue("@Position", employee.Position);
                     editEmployee.Parameters.AddWithValue("@Salary", employee.Salary);
                     editEmployee.Parameters.AddWithValue("@Username", employee.Username);
-                    editEmployee.Parameters.AddWithValue("@Password", employee.Password);
+                    editEmployee.Parameters.AddWithValue("@Password", employee.GetPassword());
+                    editEmployee.Parameters.AddWithValue("@isAdmin", employee.isAdmin);
 
                     editEmployee.ExecuteNonQuery();
                     conn.Close();
