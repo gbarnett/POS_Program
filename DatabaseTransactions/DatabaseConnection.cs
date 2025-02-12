@@ -12,8 +12,8 @@ namespace POS_Program.DatabaseTransactions
     internal class DatabaseConnection
     {
         // real host : 10.0.0.4
-        public string connectionString = "Server=localhost;Uid=admin;Pwd=Badboy6376!!;Port=3306;";
-        public const string schemaConnection = "Server=localhost;Database=pos_program;Uid=admin;Pwd=Badboy6376!!;Port=3306;";
+        public string connectionString = "Server=10.0.0.4;Uid=admin;Pwd=Badboy6376!!;Port=3306;";
+        public const string schemaConnection = "Server=10.0.0.4;Database=pos_program;Uid=admin;Pwd=Badboy6376!!;Port=3306;";
 
         public MySqlConnection ConnectToDatabase()
         {
@@ -264,8 +264,8 @@ namespace POS_Program.DatabaseTransactions
             }
             if (adminAccount == 0)
             {
-                string adminCommandText = "INSERT INTO Employee (Username, Password) " +
-                                     "VALUES ('admin', 'password')";
+                string adminCommandText = "INSERT INTO Employee (Username, Password, isAdmin) " +
+                                     "VALUES ('admin', 'password', '1')";
                 conn.Open();
                 
                 try

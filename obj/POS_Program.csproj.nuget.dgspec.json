@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\POS_Program.csproj": {}
+    "D:\\Coding Projects\\POS_Program\\POS_Program\\POS_Program.csproj": {}
   },
   "projects": {
-    "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\POS_Program.csproj": {
+    "D:\\Coding Projects\\POS_Program\\POS_Program\\POS_Program.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\POS_Program.csproj",
+        "projectUniqueName": "D:\\Coding Projects\\POS_Program\\POS_Program\\POS_Program.csproj",
         "projectName": "POS_Program",
-        "projectPath": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\POS_Program.csproj",
-        "packagesPath": "C:\\Users\\garpbarn\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\obj\\",
+        "projectPath": "D:\\Coding Projects\\POS_Program\\POS_Program\\POS_Program.csproj",
+        "packagesPath": "C:\\Users\\Gary\\.nuget\\packages\\",
+        "outputPath": "D:\\Coding Projects\\POS_Program\\POS_Program\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\garpbarn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gary\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

@@ -89,3 +89,6 @@ C:\Users\garpbarn\Documents\GitHubProjects\POS_Program\obj\Debug\net8.0-windows\
 C:\Users\garpbarn\Documents\GitHubProjects\POS_Program\obj\Debug\net8.0-windows\ref\POS_Program.dll
 C:\Users\garpbarn\Documents\GitHubProjects\POS_Program\obj\Debug\net8.0-windows\POS_Program.Forms.CustomerSelectForm.resources
 C:\Users\garpbarn\Documents\GitHubProjects\POS_Program\obj\Debug\net8.0-windows\POS_Program.Forms.LoginForm.resources
+D:\Coding Projects\POS_Program\POS_Program\obj\Debug\net8.0-windows\POS_Program.Forms.CustomerSelectForm.resources
+D:\Coding Projects\POS_Program\POS_Program\obj\Debug\net8.0-windows\POS_Program.Forms.LoginForm.resources
+D:\Coding Projects\POS_Program\POS_Program\obj\Debug\net8.0-windows\POS_Program.sourcelink.json
