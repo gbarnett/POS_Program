@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("POS_Program")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e667acbb85ebe4c6ca57ac68519d46032f7d4266")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9fe0cbd34634912f6f854ad0fdbee718c182364c")]
 [assembly: System.Reflection.AssemblyProductAttribute("POS_Program")]
 [assembly: System.Reflection.AssemblyTitleAttribute("POS_Program")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
