@@ -47,40 +47,91 @@ namespace POS_Program.Forms
         private void SaveButton_Click(object sender, EventArgs e)
         {
             Employee employee = new Employee();
-            employee.Name = NameTextBox.Text;
-            employee.Phone = PhoneTextBox.Text;
-            employee.Address = AddressTextBox.Text;
-            employee.City = CityTextBox.Text;
-            employee.State = StateComboBox.Text;
-            employee.Zip = ZipTextBox.Text;
-            employee.Position = PositionTextBox.Text;
-            employee.Salary = Convert.ToDecimal(SalaryTextBox.Text);
-            employee.Username = UsernameTextBox.Text;
-            employee.SetPassword(PasswordTextBox.Text);
-            if (IsAdminCheckBox.Checked)
+            try
             {
-                employee.isAdmin = 1;
-            }
-            else
-            {
-                employee.isAdmin = 0;
-            }
-
-
-            if (!EditMode)
-            {
-                EmployeeTransactions.AddEmployee(employee);
-            }
-            else
-            {
-                employee.ID = EmployeeID;
-                if (PasswordTextBox.Text == null)
+                if(!String.IsNullOrEmpty(NameTextBox.Text))
                 {
+                    employee.Name = NameTextBox.Text;
+                } else { MessageBox.Show("Name cannot be empty"); return; }
 
+                if (!String.IsNullOrEmpty(PhoneTextBox.Text))
+                {
+                    employee.Phone = PhoneTextBox.Text;
                 }
-                EmployeeTransactions.EditEmployee(employee);
+                else { MessageBox.Show("Phone number cannot be empty"); return; }
+
+                if (!String.IsNullOrEmpty(AddressTextBox.Text))
+                {
+                    employee.Address = AddressTextBox.Text;
+                }
+                else { MessageBox.Show("Address cannot be empty"); return; }
+
+                if (!String.IsNullOrEmpty(CityTextBox.Text))
+                {
+                    employee.City = CityTextBox.Text;
+                }
+                else { MessageBox.Show("City cannot be empty"); return; }
+
+                if (!String.IsNullOrEmpty(StateComboBox.Text))
+                {
+                    employee.State = StateComboBox.Text;
+                }
+                else { MessageBox.Show("State cannot be empty"); return; }
+
+                if (!String.IsNullOrEmpty(ZipTextBox.Text))
+                {
+                    employee.Zip = ZipTextBox.Text;
+                }
+                else { MessageBox.Show("Zip cannot be empty"); return; }
+
+                if (!String.IsNullOrEmpty(PositionTextBox.Text))
+                {
+                    employee.Position = PositionTextBox.Text;
+                }
+                else { MessageBox.Show("Position cannot be empty"); return; }
+
+                if (!String.IsNullOrEmpty(SalaryTextBox.Text))
+                {
+                    employee.Salary = Convert.ToDecimal(SalaryTextBox.Text);
+                }
+                else { MessageBox.Show("Salary cannot be empty"); return; }
+
+                if (!String.IsNullOrEmpty(UsernameTextBox.Text))
+                {
+                    employee.Username = UsernameTextBox.Text;
+                }
+                else { MessageBox.Show("Username cannot be empty"); return; }
+
+                if (!String.IsNullOrEmpty(PasswordTextBox.Text))
+                {
+                    employee.SetPassword(PasswordTextBox.Text);
+                }
+                else { MessageBox.Show("Password cannot be empty"); return; }
+
+                if (IsAdminCheckBox.Checked)
+                {
+                    employee.isAdmin = 1;
+                }
+                else
+                {
+                    employee.isAdmin = 0;
+                }
+
+                if (!EditMode)
+                {
+                    EmployeeTransactions.AddEmployee(employee);
+                }
+                else
+                {
+                    employee.ID = EmployeeID;
+                    EmployeeTransactions.EditEmployee(employee);
+                }
+                this.Close();
             }
-            this.Close();
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
 
         private void CancelButton_Click(object sender, EventArgs e)

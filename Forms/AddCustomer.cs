@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using POS_Program.Classes;
@@ -39,24 +40,59 @@ namespace POS_Program
         private void SaveButton_Click(object sender, EventArgs e)
         {
             Customer customer = new Customer();
-
             customer.ID = CustomerID;
-            customer.Name = NameTextBox.Text;
-            customer.Phone = PhoneTextBox.Text;
-            customer.Address = AddressTextBox.Text;
-            customer.City = CityTextBox.Text;
-            customer.State = StateComboBox.Text;
-            customer.Zip = ZipTextBox.Text;
+            try
+            {
+                if (!String.IsNullOrEmpty(NameTextBox.Text))
+                {
+                    customer.Name = NameTextBox.Text;
+                }
+                else { MessageBox.Show("Name cannot be empty"); return; }
 
-            if (!EditMode)
-            {
-                CustomerTransactions.AddCustomer(customer);
-                this.Close();
+                if (!String.IsNullOrEmpty(PhoneTextBox.Text))
+                {
+                    customer.Phone = PhoneTextBox.Text;
+                }
+                else { MessageBox.Show("Phone cannot be empty"); return; }
+
+                if (!String.IsNullOrEmpty(AddressTextBox.Text))
+                {
+                    customer.Address = AddressTextBox.Text;
+                }
+                else { MessageBox.Show("Address cannot be empty"); return; }
+
+                if (!String.IsNullOrEmpty(CityTextBox.Text))
+                {
+                    customer.City = CityTextBox.Text;
+                }
+                else { MessageBox.Show("City cannot be empty"); return; }
+
+                if (!String.IsNullOrEmpty(StateComboBox.Text))
+                {
+                    customer.State = StateComboBox.Text;
+                }
+                else { MessageBox.Show("State cannot be empty"); return; }
+
+                if (!String.IsNullOrEmpty(ZipTextBox.Text))
+                {
+                    customer.Zip = ZipTextBox.Text;
+                }
+                else { MessageBox.Show("Zip cannot be empty"); return; }
+
+                if (!EditMode)
+                {
+                    CustomerTransactions.AddCustomer(customer);
+                    this.Close();
+                }
+                else
+                {
+                    CustomerTransactions.EditCustomer(customer);
+                    this.Close();
+                }
             }
-            else
+            catch(Exception ex)
             {
-                CustomerTransactions.EditCustomer(customer);
-                this.Close();
+                Console.WriteLine(ex.Message);
             }
         }
 

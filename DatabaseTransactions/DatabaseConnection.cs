@@ -12,8 +12,8 @@ namespace POS_Program.DatabaseTransactions
     internal class DatabaseConnection
     {
         // real host : 10.0.0.4
-        public string connectionString = "Server=10.0.0.4;Uid=admin;Pwd=Password!;Port=3306;";
-        public const string schemaConnection = "Server=10.0.0.4;Database=pos_program;Uid=admin;Pwd=Password!;Port=3306;";
+        public string connectionString = "Server=localhost;Uid=admin;Pwd=Password!;Port=3306;";
+        public const string schemaConnection = "Server=localhost;Database=pos_program;Uid=admin;Pwd=Password!;Port=3306;";
 
         public MySqlConnection ConnectToDatabase()
         {

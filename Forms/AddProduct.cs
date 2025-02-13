@@ -34,19 +34,43 @@ namespace POS_Program.Forms
         private void SaveButton_Click(object sender, EventArgs e)
         {
             Product product = new Product();
-            product.ID = ProductID;
-            product.Name = NameTextBox.Text;
-            product.Price = Convert.ToDecimal(PriceTextBox.Text);
-            product.Description = DescriptionTextBox.Text;
-            if (!EditMode)
+            try
             {
-                ProductTransactions.AddProduct(product);
+                product.ID = ProductID;
+                if(!String.IsNullOrEmpty(NameTextBox.Text))
+                {
+                    product.Name = NameTextBox.Text;
+                }
+                else
+                {
+                    MessageBox.Show("Name cannot be empty");
+                    return;
+                }
+                if (!String.IsNullOrEmpty(PriceTextBox.Text))
+                {
+                    product.Price = Convert.ToDecimal(PriceTextBox.Text);
+                }
+                else
+                {
+                    MessageBox.Show("Price cannot be empty");
+                    return;
+                }
+                product.Description = DescriptionTextBox.Text;
+                if (!EditMode)
+                {
+                    ProductTransactions.AddProduct(product);
+                }
+                else
+                {
+                    ProductTransactions.EditProduct(product);
+                }
+                this.Close();
             }
-            else
+            catch (Exception ex)
             {
-                ProductTransactions.EditProduct(product);
+                Console.WriteLine(ex.Message);
+                MessageBox.Show("Price must be numeric");
             }
-            this.Close();
 
         }
 

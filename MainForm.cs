@@ -46,5 +46,11 @@ namespace POS_Program
             OrdersForm ordersForm = new OrdersForm(CurrentEmployee);
             ordersForm.Show();
         }
+
+        private void ReportsButton_Click(object sender, EventArgs e)
+        {
+            SalesReports salesReports = new SalesReports();
+            salesReports.Show();
+        }
     }
 }
