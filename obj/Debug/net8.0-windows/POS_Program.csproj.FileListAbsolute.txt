@@ -93,3 +93,4 @@ D:\Coding Projects\POS_Program\POS_Program\obj\Debug\net8.0-windows\POS_Program.
 D:\Coding Projects\POS_Program\POS_Program\obj\Debug\net8.0-windows\POS_Program.Forms.LoginForm.resources
 D:\Coding Projects\POS_Program\POS_Program\obj\Debug\net8.0-windows\POS_Program.sourcelink.json
 C:\Users\garpbarn\Documents\GitHubProjects\POS_Program\obj\Debug\net8.0-windows\POS_Program.Forms.SalesReports.resources
+D:\Coding Projects\POS_Program\POS_Program\obj\Debug\net8.0-windows\POS_Program.Forms.SalesReports.resources

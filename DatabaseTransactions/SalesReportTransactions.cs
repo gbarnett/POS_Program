@@ -14,7 +14,7 @@ namespace POS_Program.DatabaseTransactions
         {
             List<Order> orders = new List<Order>();
             var conn = DatabaseConnection.ConnectToSchema();
-            string commandText = "SELECT * FROM `Order` WHERE day(`date`) = day(CURRENT_DATE())";
+            string commandText = "SELECT * FROM ORDERS WHERE day(`date`) = day(CURRENT_DATE())";
             conn.Open();
             try
             {
@@ -48,7 +48,7 @@ namespace POS_Program.DatabaseTransactions
         {
             List<Order> orders = new List<Order>();
             var conn = DatabaseConnection.ConnectToSchema();
-            string commandText = "SELECT * FROM `Order` WHERE MONTH(`date`) = MONTH(CURRENT_DATE()) AND YEAR(CURRENT_DATE())";
+            string commandText = "SELECT * FROM ORDERS WHERE MONTH(`date`) = MONTH(CURRENT_DATE()) AND YEAR(CURRENT_DATE())";
             conn.Open();
             try
             {
@@ -82,7 +82,7 @@ namespace POS_Program.DatabaseTransactions
         {
             List<Order> orders = new List<Order>();
             var conn = DatabaseConnection.ConnectToSchema();
-            string commandText = "SELECT * FROM `Order` WHERE YEAR(`date`) = YEAR(CURRENT_DATE())";
+            string commandText = "SELECT * FROM ORDERS WHERE YEAR(`date`) = YEAR(CURRENT_DATE())";
             conn.Open();
             try
             {

@@ -78,7 +78,7 @@ namespace POS_Program.Forms
             order.CustomerID = CurrentCustomer.ID;
             order.Name = CurrentCustomer.Name;
             order.Total = TotalPrice;
-            OrderTransactions.CreateNewOrder(order);
+            OrderTransactions.CreateNewOrder(order, CurrentEmployee.ID);
 
             int orderID = OrderTransactions.GetLatestOrderID();
 

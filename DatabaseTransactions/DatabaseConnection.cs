@@ -12,8 +12,8 @@ namespace POS_Program.DatabaseTransactions
     internal class DatabaseConnection
     {
         // real host : 10.0.0.4
-        public string connectionString = "Server=localhost;Uid=admin;Pwd=Password!;Port=3306;";
-        public const string schemaConnection = "Server=localhost;Database=pos_program;Uid=admin;Pwd=Password!;Port=3306;";
+        public string connectionString = "Server=10.0.0.4;Uid=admin;Pwd=Password!;Port=3306;";
+        public const string schemaConnection = "Server=10.0.0.4;Database=pos_program;Uid=admin;Pwd=Password!;Port=3306;";
 
         public MySqlConnection ConnectToDatabase()
         {
@@ -190,12 +190,17 @@ namespace POS_Program.DatabaseTransactions
         {
             var conn = ConnectToSchema();
             conn.Open();
-            string commandText = "CREATE TABLE IF NOT EXISTS `Order` (" +
-                                 "ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT, " +
-                                 "Date DATETIME, " +
-                                 "CUSTOMERID INT NOT NULL, " +
-                                 "Name varchar(255), " +
-                                 "Total DECIMAL(10,2));";
+            string commandText = "CREATE TABLE IF NOT EXISTS `Orders` (" +  
+                     "ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT, " +
+                     "Date DATETIME, " +
+                     "CustomerID INT NOT NULL, " +
+                     "EmployeeID INT NOT NULL, " +  
+                     "Name VARCHAR(255), " +
+                     "Total DECIMAL(10,2), " +
+                     "FOREIGN KEY (CustomerID) REFERENCES Customer(ID) ON DELETE CASCADE, " +
+                     "FOREIGN KEY (EmployeeID) REFERENCES Employee(ID) ON DELETE CASCADE" +
+                     ");";
+
 
             try
             {
@@ -223,8 +228,8 @@ namespace POS_Program.DatabaseTransactions
                                  "ID INT NOT NULL PRIMARY KEY AUTO_INCREMENT, " +
                                  "OrderID INT NOT NULL, " +
                                  "ProductID INT, " +
-                                 "FOREIGN KEY (OrderID) REFERENCES `Order`(ID) ON DELETE CASCADE, " +
-                                 "FOREIGN KEY (ProductID) REFERENCES Product(ID) ON DELETE SET NULL)";
+                                 "FOREIGN KEY (OrderID) REFERENCES Orders(ID) ON DELETE CASCADE, " +
+                                 "FOREIGN KEY (ProductID) REFERENCES Product(ID) ON DELETE SET NULL);";
             try
             {
                 using (MySqlCommand command = new MySqlCommand(commandText, conn))

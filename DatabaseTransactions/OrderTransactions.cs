@@ -11,11 +11,11 @@ namespace POS_Program.DatabaseTransactions
 {
     internal class OrderTransactions
     {
-        public static bool CreateNewOrder(Order order)
+        public static bool CreateNewOrder(Order order, int employeeID)
         {
             var conn = DatabaseConnection.ConnectToSchema();
-            string commandText = "INSERT INTO `Order` (Date, CUSTOMERID, Name, Total) " +
-                                 "VALUES (@Date, @CustomerID, @Name, @Total);";
+            string commandText = "INSERT INTO ORDERS (Date, CUSTOMERID, Name, Total, EmployeeID) " +
+                                 "VALUES (@Date, @CustomerID, @Name, @Total, @EmployeeID);";
             conn.Open();
             try
             {
@@ -23,6 +23,7 @@ namespace POS_Program.DatabaseTransactions
                 {
                     insertOrder.Parameters.AddWithValue("@Date", order.Date);
                     insertOrder.Parameters.AddWithValue("@CustomerID", order.CustomerID);
+                    insertOrder.Parameters.AddWithValue(@"EmployeeID", employeeID);
                     insertOrder.Parameters.AddWithValue("@Name", order.Name);
                     insertOrder.Parameters.AddWithValue("@Total", order.Total);
 
@@ -44,11 +45,20 @@ namespace POS_Program.DatabaseTransactions
         {
             int orderID;
             var conn = DatabaseConnection.ConnectToSchema();
-            string commandText = "SELECT MAX(ID) FROM `ORDER`;";
+            string commandText = "SELECT MAX(ID) FROM ORDERS;";
             conn.Open();
-            using(MySqlCommand command = new MySqlCommand(commandText, conn))
+            try
             {
-                orderID = Convert.ToInt32(command.ExecuteScalar());
+                using (MySqlCommand command = new MySqlCommand(commandText, conn))
+                {
+                    orderID = Convert.ToInt32(command.ExecuteScalar());
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                conn.Close();
+                return 1;
             }
             conn.Close();
             return orderID;
@@ -58,7 +68,7 @@ namespace POS_Program.DatabaseTransactions
         {
             List<Order> orders = new List<Order>();
             var conn = DatabaseConnection.ConnectToSchema();
-            string commandText = "SELECT * FROM `ORDER`";
+            string commandText = "SELECT * FROM `ORDERS`";
             conn.Open();
             try
             {
@@ -70,7 +80,7 @@ namespace POS_Program.DatabaseTransactions
                         Order order = new Order();
                         order.ID = Convert.ToInt32(reader["ID"]);
                         order.Date = (DateTime)reader["Date"];
-                        order.CustomerID = Convert.ToInt32(reader["CUSTOMERID"]);
+                        order.CustomerID = Convert.ToInt32(reader["CustomerID"]);
                         order.Name = reader["Name"].ToString();
                         order.Total = Convert.ToDecimal(reader["Total"]);
                         orders.Add(order);
@@ -115,7 +125,7 @@ namespace POS_Program.DatabaseTransactions
         public static bool DeleteOrder(Order order)
         {
             var conn = DatabaseConnection.ConnectToSchema();
-            string commandText = "DELETE FROM `ORDER` WHERE ID = @id";
+            string commandText = "DELETE FROM ORDERS WHERE ID = @id";
             conn.Open();
             try
             {

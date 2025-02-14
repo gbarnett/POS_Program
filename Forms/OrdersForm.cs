@@ -31,7 +31,11 @@ namespace POS_Program.Forms
         public void LoadOrders()
         {
             OrderDataGridView.DataSource = OrderTransactions.GetAllOrders();
-            OrderDataGridView.Columns["CustomerID"].Visible = false;
+            if (OrderTransactions.GetAllOrders() != null)
+            {
+                OrderDataGridView.Columns["CustomerID"].Visible = false;
+            }
+            
         }
 
         private void NewOrderButton_Click(object sender, EventArgs e)
