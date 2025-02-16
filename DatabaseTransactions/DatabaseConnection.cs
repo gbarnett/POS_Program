@@ -13,7 +13,7 @@ namespace POS_Program.DatabaseTransactions
     {
         // real host : 10.0.0.4
         public string connectionString = "Server=10.0.0.4;Uid=admin;Pwd=Password!;Port=3306;";
-        public const string schemaConnection = "Server=10.0.0.4;Database=pos_program;Uid=admin;Pwd=Password!;Port=3306;";
+        public const string schemaConnection = "Server=10.0.0.4;Database=pos_program;Uid=admin;Pwd=Password123;Port=3306;";
 
         public MySqlConnection ConnectToDatabase()
         {

@@ -10,16 +10,20 @@ namespace POS_Program.DatabaseTransactions
 {
     public class SalesReportTransactions
     {
-        public static List<Order> DailyOrders()
+        public static List<Order> DailyOrders(Employee employee)
         {
             List<Order> orders = new List<Order>();
             var conn = DatabaseConnection.ConnectToSchema();
-            string commandText = "SELECT * FROM ORDERS WHERE day(`date`) = day(CURRENT_DATE())";
+            string commandText = "SELECT * FROM ORDERS WHERE DAY(`date`) = DAY(CURRENT_DATE()) AND EmployeeID = @id";
             conn.Open();
             try
             {
                 using (MySqlCommand dailyOrders = new MySqlCommand(commandText, conn))
                 {
+                    if (employee != null)
+                    {
+                        dailyOrders.Parameters.AddWithValue("@id", employee.ID);
+                    }
                     using (MySqlDataReader reader = dailyOrders.ExecuteReader())
                     {
                         while (reader.Read())
@@ -44,17 +48,18 @@ namespace POS_Program.DatabaseTransactions
             return orders;
         }
 
-        public static List<Order> MonthlyOrders()
+        public static List<Order> MonthlyOrders(Employee employee)
         {
             List<Order> orders = new List<Order>();
             var conn = DatabaseConnection.ConnectToSchema();
-            string commandText = "SELECT * FROM ORDERS WHERE MONTH(`date`) = MONTH(CURRENT_DATE()) AND YEAR(CURRENT_DATE())";
+            string commandText = "SELECT * FROM ORDERS WHERE MONTH(`date`) = MONTH(CURRENT_DATE()) AND EmployeeID = @id";
             conn.Open();
             try
             {
-                using (MySqlCommand dailyOrders = new MySqlCommand(commandText, conn))
+                using (MySqlCommand monthlyOrders = new MySqlCommand(commandText, conn))
                 {
-                    using (MySqlDataReader reader = dailyOrders.ExecuteReader())
+                    monthlyOrders.Parameters.AddWithValue("@id", employee.ID);
+                    using (MySqlDataReader reader = monthlyOrders.ExecuteReader())
                     {
                         while (reader.Read())
                         {
@@ -78,17 +83,22 @@ namespace POS_Program.DatabaseTransactions
             return orders;
         }
 
-        public static List<Order> YearlyOrders()
+        public static List<Order> YearlyOrders(Employee employee)
         {
             List<Order> orders = new List<Order>();
             var conn = DatabaseConnection.ConnectToSchema();
-            string commandText = "SELECT * FROM ORDERS WHERE YEAR(`date`) = YEAR(CURRENT_DATE())";
+            string commandText = "SELECT * FROM ORDERS WHERE YEAR(`date`) = YEAR(CURRENT_DATE()) AND EmployeeID = @id";
             conn.Open();
+            
             try
             {
-                using (MySqlCommand dailyOrders = new MySqlCommand(commandText, conn))
+                using (MySqlCommand yearlyOrders = new MySqlCommand(commandText, conn))
                 {
-                    using (MySqlDataReader reader = dailyOrders.ExecuteReader())
+                    if (employee != null)
+                    {
+                        yearlyOrders.Parameters.AddWithValue("@id", employee.ID);
+                    }
+                    using (MySqlDataReader reader = yearlyOrders.ExecuteReader())
                     {
                         while (reader.Read())
                         {
