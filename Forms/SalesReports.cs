@@ -14,11 +14,6 @@ namespace POS_Program.Forms
 {
     public partial class SalesReports : Form
     {
-        /*
-         * Will require to change the database table however,
-        add ability to track sales by employee.
-        Add a drop down combobox for selecting employee
-         */
 
         List<Order> orders = new List<Order>();
         Employee SelectedEmployee;
@@ -26,6 +21,7 @@ namespace POS_Program.Forms
         {
             InitializeComponent();
             LoadEmployees();
+            GetDailyOrders();
         }
 
         private void GetDailyOrders()
@@ -86,7 +82,6 @@ namespace POS_Program.Forms
             BindingList<Employee> employees = EmployeeTransactions.GetAllEmployees();
             EmployeeComboBox.DataSource = employees;
             EmployeeComboBox.ValueMember = "Name";
-
         }
 
         private void EmployeeComboBox_SelectedIndexChanged(object sender, EventArgs e)
