@@ -120,7 +120,7 @@
             Controls.Add(OrderDataGridView);
             Margin = new Padding(3, 2, 3, 2);
             Name = "SalesReports";
-            Text = "SalesReports";
+            Text = "Sales Reports";
             ((System.ComponentModel.ISupportInitialize)OrderDataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();

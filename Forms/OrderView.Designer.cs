@@ -41,15 +41,14 @@
             OrderItemsDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             OrderItemsDataGridView.BorderStyle = BorderStyle.Fixed3D;
             OrderItemsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            OrderItemsDataGridView.Location = new Point(14, 93);
-            OrderItemsDataGridView.Margin = new Padding(3, 4, 3, 4);
+            OrderItemsDataGridView.Location = new Point(12, 70);
             OrderItemsDataGridView.MultiSelect = false;
             OrderItemsDataGridView.Name = "OrderItemsDataGridView";
             OrderItemsDataGridView.ReadOnly = true;
             OrderItemsDataGridView.RowHeadersVisible = false;
             OrderItemsDataGridView.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             OrderItemsDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            OrderItemsDataGridView.Size = new Size(505, 491);
+            OrderItemsDataGridView.Size = new Size(442, 368);
             OrderItemsDataGridView.TabIndex = 11;
             OrderItemsDataGridView.DataBindingComplete += OrderItemsDataGridView_DataBindingComplete;
             // 
@@ -57,9 +56,9 @@
             // 
             CustomerNameLabel.AutoSize = true;
             CustomerNameLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            CustomerNameLabel.Location = new Point(203, 12);
+            CustomerNameLabel.Location = new Point(178, 9);
             CustomerNameLabel.Name = "CustomerNameLabel";
-            CustomerNameLabel.Size = new Size(102, 28);
+            CustomerNameLabel.Size = new Size(83, 21);
             CustomerNameLabel.TabIndex = 12;
             CustomerNameLabel.Text = "Customer";
             // 
@@ -67,24 +66,23 @@
             // 
             PriceLabel.AutoSize = true;
             PriceLabel.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            PriceLabel.Location = new Point(224, 61);
+            PriceLabel.Location = new Point(196, 46);
             PriceLabel.Name = "PriceLabel";
-            PriceLabel.Size = new Size(76, 28);
+            PriceLabel.Size = new Size(60, 21);
             PriceLabel.TabIndex = 13;
             PriceLabel.Text = "Price : ";
             // 
             // OrderView
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 128, 0);
-            ClientSize = new Size(533, 600);
+            ClientSize = new Size(466, 450);
             Controls.Add(PriceLabel);
             Controls.Add(CustomerNameLabel);
             Controls.Add(OrderItemsDataGridView);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "OrderView";
-            Text = "OrderView";
+            Text = "View Order";
             ((System.ComponentModel.ISupportInitialize)OrderItemsDataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();

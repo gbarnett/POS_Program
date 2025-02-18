@@ -37,10 +37,9 @@
             // CustomerSelectButton
             // 
             CustomerSelectButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CustomerSelectButton.Location = new Point(136, 528);
-            CustomerSelectButton.Margin = new Padding(3, 4, 3, 4);
+            CustomerSelectButton.Location = new Point(119, 396);
             CustomerSelectButton.Name = "CustomerSelectButton";
-            CustomerSelectButton.Size = new Size(130, 68);
+            CustomerSelectButton.Size = new Size(114, 51);
             CustomerSelectButton.TabIndex = 15;
             CustomerSelectButton.Text = "Select";
             CustomerSelectButton.UseVisualStyleBackColor = true;
@@ -50,9 +49,9 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(152, 8);
+            label3.Location = new Point(133, 6);
             label3.Name = "label3";
-            label3.Size = new Size(102, 28);
+            label3.Size = new Size(83, 21);
             label3.TabIndex = 14;
             label3.Text = "Customer";
             // 
@@ -63,29 +62,29 @@
             CustomerDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             CustomerDataGridView.BorderStyle = BorderStyle.Fixed3D;
             CustomerDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            CustomerDataGridView.Location = new Point(32, 40);
-            CustomerDataGridView.Margin = new Padding(3, 4, 3, 4);
+            CustomerDataGridView.Location = new Point(28, 30);
             CustomerDataGridView.MultiSelect = false;
             CustomerDataGridView.Name = "CustomerDataGridView";
             CustomerDataGridView.ReadOnly = true;
             CustomerDataGridView.RowHeadersVisible = false;
             CustomerDataGridView.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             CustomerDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            CustomerDataGridView.Size = new Size(328, 475);
+            CustomerDataGridView.Size = new Size(287, 356);
             CustomerDataGridView.TabIndex = 13;
             CustomerDataGridView.DataBindingComplete += CustomerDataGridView_DataBindingComplete;
             // 
             // CustomerSelectForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 128, 0);
-            ClientSize = new Size(387, 602);
+            ClientSize = new Size(339, 452);
             Controls.Add(CustomerSelectButton);
             Controls.Add(label3);
             Controls.Add(CustomerDataGridView);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "CustomerSelectForm";
-            Text = "CustomerSelectForm";
+            Text = "Select Customer";
             ((System.ComponentModel.ISupportInitialize)CustomerDataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -3,8 +3,84 @@
   "WorkspaceRootPath": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\salesreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\salesreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\salesreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\salesreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\orderview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\orderview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\ordersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\ordersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\neworderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\neworderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\employeesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\employeesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\employeesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\employeesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\customersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\customersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\customerselectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\customerselectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\customerselectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\customerselectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\addcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\addcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\ordersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\ordersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\classes\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,36 +99,12 @@
       "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:databasetransactions\\databaseconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\salesreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\salesreports.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\orderview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\orderview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\employeesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\employeesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\ordersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\ordersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\addcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,68 +115,16 @@
       "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\ordersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\ordersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\neworderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\neworderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\customerselectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\customerselectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\employeesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\employeesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\databasetransactions\\employeetransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:databasetransactions\\employeetransactions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\productsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\neworderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\neworderform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\customersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\customersform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\customerselectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\customerselectform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\addcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\addcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\addemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\forms\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\addemployee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\addemployee.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|solutionrelative:forms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6648C13-7883-4971-87D9-707009A73760}|POS_Program.csproj|c:\\users\\garpbarn\\documents\\githubprojects\\pos_program\\classes\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -146,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 21,
           "Children": [
             {
               "$type": "Bookmark",
@@ -162,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 20,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Classes\\Order.cs",
               "RelativeDocumentMoniker": "Classes\\Order.cs",
@@ -170,12 +170,11 @@
               "RelativeToolTip": "Classes\\Order.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T15:59:41.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T15:59:41.705Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 21,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Classes\\OrderItem.cs",
               "RelativeDocumentMoniker": "Classes\\OrderItem.cs",
@@ -183,12 +182,11 @@
               "RelativeToolTip": "Classes\\OrderItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T15:59:40.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-17T15:59:40.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 22,
               "Title": "SalesReportTransactions.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\DatabaseTransactions\\SalesReportTransactions.cs",
               "RelativeDocumentMoniker": "DatabaseTransactions\\SalesReportTransactions.cs",
@@ -196,36 +194,36 @@
               "RelativeToolTip": "DatabaseTransactions\\SalesReportTransactions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T18:55:23.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T18:55:23.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SalesReports.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\SalesReports.cs",
               "RelativeDocumentMoniker": "Forms\\SalesReports.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\SalesReports.cs",
               "RelativeToolTip": "Forms\\SalesReports.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAgwFMAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAA1wFMAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T18:53:35.928Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "SalesReports.cs [Design]",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\SalesReports.cs",
               "RelativeDocumentMoniker": "Forms\\SalesReports.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\SalesReports.cs [Design]",
               "RelativeToolTip": "Forms\\SalesReports.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T18:49:48.743Z"
+              "WhenOpened": "2025-02-13T18:49:48.743Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 27,
               "Title": "AddProduct.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\AddProduct.cs",
               "RelativeDocumentMoniker": "Forms\\AddProduct.cs",
@@ -238,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 4,
               "Title": "ProductsForm.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\ProductsForm.cs",
               "RelativeDocumentMoniker": "Forms\\ProductsForm.cs",
@@ -251,59 +249,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 3,
               "Title": "ProductsForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\ProductsForm.cs",
               "RelativeDocumentMoniker": "Forms\\ProductsForm.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\ProductsForm.cs [Design]",
               "RelativeToolTip": "Forms\\ProductsForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T13:04:42.93Z"
+              "WhenOpened": "2025-02-11T13:04:42.93Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 13,
               "Title": "AddProduct.cs [Design]",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\AddProduct.cs",
               "RelativeDocumentMoniker": "Forms\\AddProduct.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\AddProduct.cs [Design]",
               "RelativeToolTip": "Forms\\AddProduct.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T13:04:01.92Z"
+              "WhenOpened": "2025-02-11T13:04:01.92Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
               "Title": "OrdersForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\OrdersForm.cs",
               "RelativeDocumentMoniker": "Forms\\OrdersForm.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\OrdersForm.cs [Design]",
               "RelativeToolTip": "Forms\\OrdersForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T12:50:41.439Z"
+              "WhenOpened": "2025-02-11T12:50:41.439Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "AddEmployee.Designer.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\AddEmployee.Designer.cs",
               "RelativeDocumentMoniker": "Forms\\AddEmployee.Designer.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\AddEmployee.Designer.cs",
               "RelativeToolTip": "Forms\\AddEmployee.Designer.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAwwCoAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAwwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T21:00:20.414Z"
+              "WhenOpened": "2025-02-10T21:00:20.414Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 10,
               "Title": "CustomersForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\CustomersForm.cs",
               "RelativeDocumentMoniker": "Forms\\CustomersForm.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\CustomersForm.cs [Design]",
               "RelativeToolTip": "Forms\\CustomersForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T21:12:38.609Z"
+              "WhenOpened": "2025-02-10T21:12:38.609Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -319,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "AddEmployee.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\AddEmployee.cs",
               "RelativeDocumentMoniker": "Forms\\AddEmployee.cs",
@@ -332,18 +335,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 14,
               "Title": "AddEmployee.cs [Design]",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\AddEmployee.cs",
               "RelativeDocumentMoniker": "Forms\\AddEmployee.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\AddEmployee.cs [Design]",
               "RelativeToolTip": "Forms\\AddEmployee.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T20:35:22.52Z"
+              "WhenOpened": "2025-02-10T20:35:22.52Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 29,
               "Title": "EmployeeTransactions.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\DatabaseTransactions\\EmployeeTransactions.cs",
               "RelativeDocumentMoniker": "DatabaseTransactions\\EmployeeTransactions.cs",
@@ -355,55 +359,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 9,
               "Title": "EmployeesForm.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\EmployeesForm.cs",
               "RelativeDocumentMoniker": "Forms\\EmployeesForm.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\EmployeesForm.cs",
               "RelativeToolTip": "Forms\\EmployeesForm.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA7wBkAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAkwBkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T20:21:05.143Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "EmployeesForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\EmployeesForm.cs",
               "RelativeDocumentMoniker": "Forms\\EmployeesForm.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\EmployeesForm.cs [Design]",
               "RelativeToolTip": "Forms\\EmployeesForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T20:20:59.335Z"
+              "WhenOpened": "2025-02-10T20:20:59.335Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\MainForm.cs [Design]",
               "RelativeToolTip": "MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T20:13:39.365Z"
+              "WhenOpened": "2025-02-10T20:13:39.365Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 19,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\LoginForm.cs",
               "RelativeToolTip": "Forms\\LoginForm.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAzwB0AAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T19:58:46.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 24,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -411,22 +417,24 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T19:57:44.652Z"
+              "WhenOpened": "2025-02-10T19:57:44.652Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 16,
               "Title": "LoginForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\LoginForm.cs",
               "RelativeDocumentMoniker": "Forms\\LoginForm.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\LoginForm.cs [Design]",
               "RelativeToolTip": "Forms\\LoginForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T19:37:30.938Z"
+              "WhenOpened": "2025-02-10T19:37:30.938Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 25,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\MainForm.cs",
               "RelativeDocumentMoniker": "MainForm.cs",
@@ -450,14 +458,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "OrderView.cs [Design]",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\OrderView.cs",
               "RelativeDocumentMoniker": "Forms\\OrderView.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\OrderView.cs [Design]",
               "RelativeToolTip": "Forms\\OrderView.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T18:01:53.931Z"
+              "WhenOpened": "2025-02-10T18:01:53.931Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -473,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 23,
               "Title": "DatabaseConnection.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\DatabaseTransactions\\DatabaseConnection.cs",
               "RelativeDocumentMoniker": "DatabaseTransactions\\DatabaseConnection.cs",
@@ -481,12 +490,11 @@
               "RelativeToolTip": "DatabaseTransactions\\DatabaseConnection.cs",
               "ViewState": "AgIAANcAAAAAAAAAAAAawP4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T17:40:20.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T17:40:20.066Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 28,
               "Title": "NewOrderForm.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\NewOrderForm.cs",
               "RelativeDocumentMoniker": "Forms\\NewOrderForm.cs",
@@ -499,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 12,
               "Title": "CustomerSelectForm.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\CustomerSelectForm.cs",
               "RelativeDocumentMoniker": "Forms\\CustomerSelectForm.cs",
@@ -512,41 +520,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 11,
               "Title": "CustomerSelectForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\CustomerSelectForm.cs",
               "RelativeDocumentMoniker": "Forms\\CustomerSelectForm.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\CustomerSelectForm.cs [Design]",
               "RelativeToolTip": "Forms\\CustomerSelectForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T17:01:09.946Z"
+              "WhenOpened": "2025-02-10T17:01:09.946Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "OrdersForm.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\OrdersForm.cs",
               "RelativeDocumentMoniker": "Forms\\OrdersForm.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\OrdersForm.cs",
               "RelativeToolTip": "Forms\\OrdersForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T16:32:16.207Z"
+              "WhenOpened": "2025-02-10T16:32:16.207Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 15,
               "Title": "AddCustomer.cs [Design]",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\AddCustomer.cs",
               "RelativeDocumentMoniker": "Forms\\AddCustomer.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\AddCustomer.cs [Design]",
               "RelativeToolTip": "Forms\\AddCustomer.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T16:08:21.712Z"
+              "WhenOpened": "2025-02-10T16:08:21.712Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 26,
               "Title": "AddCustomer.cs",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\AddCustomer.cs",
               "RelativeDocumentMoniker": "Forms\\AddCustomer.cs",
@@ -558,14 +569,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 7,
               "Title": "NewOrderForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\NewOrderForm.cs",
               "RelativeDocumentMoniker": "Forms\\NewOrderForm.cs",
               "ToolTip": "C:\\Users\\garpbarn\\Documents\\GitHubProjects\\POS_Program\\Forms\\NewOrderForm.cs [Design]",
               "RelativeToolTip": "Forms\\NewOrderForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T16:00:03.832Z"
+              "WhenOpened": "2025-02-10T16:00:03.832Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

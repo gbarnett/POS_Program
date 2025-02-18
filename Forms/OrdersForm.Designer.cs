@@ -42,25 +42,23 @@
             OrderDataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             OrderDataGridView.BorderStyle = BorderStyle.Fixed3D;
             OrderDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            OrderDataGridView.Location = new Point(154, 16);
-            OrderDataGridView.Margin = new Padding(3, 4, 3, 4);
+            OrderDataGridView.Location = new Point(135, 12);
             OrderDataGridView.MultiSelect = false;
             OrderDataGridView.Name = "OrderDataGridView";
             OrderDataGridView.ReadOnly = true;
             OrderDataGridView.RowHeadersVisible = false;
             OrderDataGridView.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             OrderDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            OrderDataGridView.Size = new Size(746, 525);
+            OrderDataGridView.Size = new Size(653, 394);
             OrderDataGridView.TabIndex = 3;
             OrderDataGridView.DataBindingComplete += OrderDataGridView_DataBindingComplete;
             // 
             // NewOrderButton
             // 
             NewOrderButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            NewOrderButton.Location = new Point(14, 16);
-            NewOrderButton.Margin = new Padding(3, 4, 3, 4);
+            NewOrderButton.Location = new Point(12, 12);
             NewOrderButton.Name = "NewOrderButton";
-            NewOrderButton.Size = new Size(134, 67);
+            NewOrderButton.Size = new Size(117, 50);
             NewOrderButton.TabIndex = 0;
             NewOrderButton.Text = "New Order";
             NewOrderButton.UseVisualStyleBackColor = true;
@@ -69,10 +67,9 @@
             // ViewOrderButton
             // 
             ViewOrderButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            ViewOrderButton.Location = new Point(14, 235);
-            ViewOrderButton.Margin = new Padding(3, 4, 3, 4);
+            ViewOrderButton.Location = new Point(12, 176);
             ViewOrderButton.Name = "ViewOrderButton";
-            ViewOrderButton.Size = new Size(134, 67);
+            ViewOrderButton.Size = new Size(117, 50);
             ViewOrderButton.TabIndex = 1;
             ViewOrderButton.Text = "View Order";
             ViewOrderButton.UseVisualStyleBackColor = true;
@@ -81,10 +78,9 @@
             // DeleteOrderButton
             // 
             DeleteOrderButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            DeleteOrderButton.Location = new Point(14, 475);
-            DeleteOrderButton.Margin = new Padding(3, 4, 3, 4);
+            DeleteOrderButton.Location = new Point(12, 356);
             DeleteOrderButton.Name = "DeleteOrderButton";
-            DeleteOrderButton.Size = new Size(134, 67);
+            DeleteOrderButton.Size = new Size(117, 50);
             DeleteOrderButton.TabIndex = 2;
             DeleteOrderButton.Text = "Delete Order";
             DeleteOrderButton.UseVisualStyleBackColor = true;
@@ -92,17 +88,16 @@
             // 
             // OrdersForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 128, 0);
-            ClientSize = new Size(914, 559);
+            ClientSize = new Size(800, 419);
             Controls.Add(DeleteOrderButton);
             Controls.Add(ViewOrderButton);
             Controls.Add(NewOrderButton);
             Controls.Add(OrderDataGridView);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "OrdersForm";
-            Text = "OrdersForm";
+            Text = "Orders";
             ((System.ComponentModel.ISupportInitialize)OrderDataGridView).EndInit();
             ResumeLayout(false);
         }

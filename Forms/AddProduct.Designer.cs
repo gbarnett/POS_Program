@@ -40,49 +40,46 @@
             // 
             // DescriptionTextBox
             // 
-            DescriptionTextBox.Location = new Point(105, 172);
-            DescriptionTextBox.Margin = new Padding(3, 4, 3, 4);
+            DescriptionTextBox.Location = new Point(92, 129);
             DescriptionTextBox.Multiline = true;
             DescriptionTextBox.Name = "DescriptionTextBox";
-            DescriptionTextBox.Size = new Size(293, 128);
-            DescriptionTextBox.TabIndex = 21;
+            DescriptionTextBox.Size = new Size(257, 97);
+            DescriptionTextBox.TabIndex = 2;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label3.Location = new Point(211, 148);
+            label3.Location = new Point(185, 111);
             label3.Name = "label3";
-            label3.Size = new Size(97, 20);
+            label3.Size = new Size(77, 15);
             label3.TabIndex = 20;
             label3.Text = "Description :";
             // 
             // PriceTextBox
             // 
-            PriceTextBox.Location = new Point(211, 81);
-            PriceTextBox.Margin = new Padding(3, 4, 3, 4);
+            PriceTextBox.Location = new Point(185, 61);
             PriceTextBox.Name = "PriceTextBox";
-            PriceTextBox.Size = new Size(114, 27);
-            PriceTextBox.TabIndex = 19;
+            PriceTextBox.Size = new Size(100, 23);
+            PriceTextBox.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label2.Location = new Point(139, 92);
+            label2.Location = new Point(122, 69);
             label2.Name = "label2";
-            label2.Size = new Size(55, 20);
+            label2.Size = new Size(44, 15);
             label2.TabIndex = 18;
             label2.Text = "Price : ";
             // 
             // CancelButton
             // 
             CancelButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CancelButton.Location = new Point(393, 309);
-            CancelButton.Margin = new Padding(3, 4, 3, 4);
+            CancelButton.Location = new Point(344, 232);
             CancelButton.Name = "CancelButton";
-            CancelButton.Size = new Size(86, 51);
-            CancelButton.TabIndex = 17;
+            CancelButton.Size = new Size(75, 38);
+            CancelButton.TabIndex = 4;
             CancelButton.Text = "Cancel";
             CancelButton.UseVisualStyleBackColor = true;
             CancelButton.Click += CancelButton_Click;
@@ -91,39 +88,37 @@
             // 
             SaveButton.FlatAppearance.BorderColor = Color.Black;
             SaveButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            SaveButton.Location = new Point(25, 309);
-            SaveButton.Margin = new Padding(3, 4, 3, 4);
+            SaveButton.Location = new Point(22, 232);
             SaveButton.Name = "SaveButton";
-            SaveButton.Size = new Size(86, 51);
-            SaveButton.TabIndex = 16;
+            SaveButton.Size = new Size(75, 38);
+            SaveButton.TabIndex = 3;
             SaveButton.Text = "Save";
             SaveButton.UseVisualStyleBackColor = true;
             SaveButton.Click += SaveButton_Click;
             // 
             // NameTextBox
             // 
-            NameTextBox.Location = new Point(211, 16);
-            NameTextBox.Margin = new Padding(3, 4, 3, 4);
+            NameTextBox.Location = new Point(185, 12);
             NameTextBox.Name = "NameTextBox";
-            NameTextBox.Size = new Size(114, 27);
-            NameTextBox.TabIndex = 15;
+            NameTextBox.Size = new Size(100, 23);
+            NameTextBox.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label1.Location = new Point(139, 27);
+            label1.Location = new Point(122, 20);
             label1.Name = "label1";
-            label1.Size = new Size(63, 20);
+            label1.Size = new Size(49, 15);
             label1.TabIndex = 14;
             label1.Text = "Name : ";
             // 
             // AddProduct
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 128, 0);
-            ClientSize = new Size(495, 376);
+            ClientSize = new Size(433, 282);
             Controls.Add(DescriptionTextBox);
             Controls.Add(label3);
             Controls.Add(PriceTextBox);
@@ -132,9 +127,8 @@
             Controls.Add(SaveButton);
             Controls.Add(NameTextBox);
             Controls.Add(label1);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "AddProduct";
-            Text = "AddProduct";
+            Text = "Add / Edit Product";
             ResumeLayout(false);
             PerformLayout();
         }
